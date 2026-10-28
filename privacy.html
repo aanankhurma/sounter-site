@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sounter Privacy Policy</title>
+<meta name="description" content="Privacy policy of Sounter, a Chrome extension that routes each tab's sound to its own output device. All processing stays on the user's computer.">
+<style>
+/* Sounter dark palette; the page is dark in every colour scheme by design. */
+:root{color-scheme:dark;
+  --bg:#15171a;--surface:#1d2024;--line:#2c3036;
+  --text:#eceff3;--muted:#aab2bd;--accent:#3fd0c9;--accent-text:#62dbd4;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  -webkit-font-smoothing:antialiased}
+main{max-width:720px;margin:0 auto;padding:40px 16px 64px}
+header{display:flex;align-items:center;gap:12px;margin-bottom:28px}
+header svg{flex:none;border-radius:9px}
+.word{font-size:24px;font-weight:500;letter-spacing:.005em}
+h1{font-size:32px;line-height:1.2;margin:0 0 8px}
+.meta{color:var(--muted);margin:0 0 28px;font-size:15px}
+.lead{font-size:18px;padding:16px 18px;background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px}
+h2{font-size:20px;margin:36px 0 8px}
+p,li{color:var(--text)}
+ul{padding-left:22px}
+li{margin:6px 0}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.9em;background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:0 4px;overflow-wrap:anywhere}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:8px 10px;border-bottom:1px solid var(--line)}
+th{color:var(--muted);font-weight:600}
+td:first-child{min-width:190px}
+a{color:var(--accent-text)}
+footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+@media (max-width:520px){ th,td{display:block;padding:4px 0;border:0} tr{display:block;padding:8px 0;border-bottom:1px solid var(--line)} thead{display:none} }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="16 16 96 96" role="img" aria-label="Sounter logo"><rect x="16" y="16" width="96" height="96" rx="18" fill="#23262B"/><rect x="46" y="27" width="43" height="8" rx="4" fill="#ECEEF0"/><rect x="31" y="38" width="26" height="8" rx="4" fill="#ECEEF0"/><rect x="85" y="38" width="12" height="8" rx="4" fill="#ECEEF0"/><rect x="34" y="49" width="38" height="8" rx="4" fill="#3FD0C9"/><rect x="44" y="60" width="40" height="8" rx="4" fill="#3FD0C9"/><rect x="56" y="71" width="38" height="8" rx="4" fill="#3FD0C9"/><rect x="71" y="82" width="26" height="8" rx="4" fill="#ECEEF0"/><rect x="31" y="82" width="12" height="8" rx="4" fill="#ECEEF0"/><rect x="39" y="93" width="43" height="8" rx="4" fill="#ECEEF0"/></svg>
+  <span class="word">sounter</span>
+</header>
+
+<h1>Privacy Policy</h1>
+<p class="meta">Sounter browser extension for Google Chrome&trade;. Effective date: 29 October 2026. Applies to version 0.6.0 and later until this page is updated.</p>
+
+<p class="lead">Sounter processes tab audio on your computer only. It does not record audio, makes no network requests and has no account, analytics or ads. It does not sell, share or transfer any data.</p>
+
+<h2>Who we are</h2>
+<p>Sounter is published by Aanan Khurma, Zehen Foundation For Excellence. Contact: <a href="mailto:aanankhurma@gmail.com">aanankhurma@gmail.com</a>.</p>
+
+<h2>What Sounter does</h2>
+<p>Sounter sends the sound of a browser tab to an output device you choose, such as headphones or speakers, and lets you set that tab's volume, mute and equaliser.</p>
+
+<h2>Audio</h2>
+<p>When you route a tab, Chrome hands that tab's sound to Sounter. Sounter applies volume and EQ and plays the sound on the output you chose. The sound is processed in memory as it plays. It is not recorded, stored or sent anywhere. Capture ends when you stop routing, close the tab or close Chrome.</p>
+
+<h2>Microphone permission</h2>
+<p>Chrome reveals the names of your speakers and headphones to an extension only after you give it microphone access. If you allow it, Sounter opens the microphone once to unlock the device names and stops it at once. No microphone audio is read, stored or sent. Without this permission, Sounter still works with "System default". You can take the permission back at any time in Chrome's site settings for Sounter.</p>
+
+<h2>What is stored, and where</h2>
+<p>Sounter uses Chrome's extension storage on your computer. Nothing is synced to your Google account or sent to us or anyone else.</p>
+<table>
+  <thead><tr><th>Storage</th><th>Contents</th><th>How long</th></tr></thead>
+  <tbody>
+    <tr><td>Session storage (<code>chrome.storage.session</code>)</td>
+      <td>For each routed tab: output device ID and name, volume, mute, EQ bands and preset, the site's host name (for example <code>youtube.com</code>), the tab's title when it was routed, and the time routing started. Also a log of the last 500 Sounter events (see Diagnostics log).</td>
+      <td>Until you close Chrome. Per-tab entries are also removed when you stop routing or close the tab.</td></tr>
+    <tr><td>Local storage (<code>chrome.storage.local</code>)</td>
+      <td>Your preferences: the last output device you used (ID and name), whether the EQ panel is open, the EQ view, analyzer on or off, log level, and whether diagnostics include tab titles. Also the presets you save.</td>
+      <td>Until you change them, or until you remove Sounter.</td></tr>
+  </tbody>
+</table>
+<p>The host name and title of routed tabs are kept only so that Sounter can label them in its list of routed tabs. Sounter does not keep full web addresses or page content, and stores nothing about tabs you have not routed.</p>
+
+<h2>Diagnostics log</h2>
+<p>Sounter keeps a short log of its own events, such as routing started, device changed or an error, to help fix problems. Before an entry is saved, web addresses are cut to the host name, fields such as titles, page text, HTML and content are dropped, and long strings are shortened to 300 characters. The log holds at most 500 entries and is cleared when Chrome closes. The same entries are also written to the extension's developer console, which only you can see.</p>
+
+<h2>Copy diagnostics</h2>
+<p>If you click "Copy diagnostics", Sounter puts a report on your clipboard. The report contains the Sounter and Chrome versions, your platform, your preferences (the last output device by name only), the state of the audio engine, and for each routed tab: its number, host name, output device name, volume, mute and EQ. It also contains the recent log. Tab titles are included only if you turn that option on. Sounter never sends this report. You decide whether to paste it anywhere.</p>
+
+<h2>Network, analytics and third parties</h2>
+<ul>
+  <li>Sounter makes no network requests. All of its code ships inside the extension, and it loads no remote code.</li>
+  <li>There is no account, sign-in, analytics, tracking, advertising or crash reporting.</li>
+  <li>Sounter does not sell, rent, share or transfer user data to anyone. Data is not used for any purpose other than routing tab sound and remembering your settings, and never for creditworthiness or lending.</li>
+</ul>
+
+<h2>Permissions</h2>
+<table>
+  <thead><tr><th>Permission</th><th>Why Sounter needs it</th></tr></thead>
+  <tbody>
+    <tr><td><code>tabCapture</code></td><td>To capture the sound of the tab you route.</td></tr>
+    <tr><td><code>activeTab</code></td><td>To act only on the current tab when you click the icon or press the shortcut, and to label that tab.</td></tr>
+    <tr><td><code>offscreen</code></td><td>To run the audio engine in a hidden page, so sound keeps playing after the popup closes.</td></tr>
+    <tr><td><code>storage</code></td><td>To keep the settings, presets and log described above.</td></tr>
+  </tbody>
+</table>
+<p>Sounter has no host permissions and injects no scripts. It does not read or change the content of web pages.</p>
+
+<h2>Your choices and deleting data</h2>
+<ul>
+  <li>Stop routing a tab, or close it, to end capture and remove that tab's entry.</li>
+  <li>Close Chrome to clear all session storage, including the log.</li>
+  <li>Delete saved presets in Sounter's preset menu.</li>
+  <li>Remove Sounter from <code>chrome://extensions</code> to delete everything it stored.</li>
+  <li>Revoke the microphone permission in Chrome's settings for Sounter at any time.</li>
+</ul>
+
+<h2>Children</h2>
+<p>Sounter is a general audio tool. It does not knowingly collect any information from anyone, including children.</p>
+
+<h2>Changes to this policy</h2>
+<p>If Sounter's handling of data changes, this page will be updated before the new version is published, and the effective date above will change.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: Aanan Khurma, Zehen Foundation For Excellence, <a href="mailto:aanankhurma@gmail.com">aanankhurma@gmail.com</a>.</p>
+
+<footer>Google Chrome is a trademark of Google LLC. Sounter is not affiliated with or endorsed by Google.</footer>
+</main>
+</body>
+</html>
